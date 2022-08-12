@@ -13,11 +13,11 @@ URL:            https://github.com/xuanruiqi/vdpau-va-driver-vp9/
 Source0:        %{url}/archive/%{commit}/%{name}-%{shortcommit}.tar.gz
 
 Requires:       libvdpau
-BuildRequires:  libva-dev
 BuildRequires:  gcc
 BuildRequires:  make
 BuildRequires:  mesa-dev
 BuildRequires:  xorgproto-dev
+BuildRequires:  libva-dev
 BuildRequires:  libvdpau-dev
 BuildRequires:  pkg-config
 BuildRequires:  pkgconfig(gl)
