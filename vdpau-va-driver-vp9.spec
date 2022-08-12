@@ -12,7 +12,8 @@ License:        MIT
 URL:            https://github.com/xuanruiqi/vdpau-va-driver-vp9/
 Source0:        %{url}/archive/%{commit}/%{name}-%{shortcommit}.tar.gz
 
-Requires:       libvdpau
+Requires:       libvdpau-lib
+
 BuildRequires:  gcc
 BuildRequires:  make
 BuildRequires:  mesa-dev
