@@ -9,17 +9,18 @@ Release:        1.%{shortcommit}
 Summary:        A VA-API implementation that uses VDPAU as a backend
 
 License:        MIT
-URL:            https://github.com/xuanruiqi/vdpau-va-driver-vp9/
+URL:            https://github.com/xuanruiqi/vdpau-va-driver-vp9
 Source0:        %{url}/archive/%{commit}/%{name}-%{shortcommit}.tar.gz
 
 Requires:       libvdpau-lib
 
 BuildRequires:  gcc
 BuildRequires:  make
-BuildRequires:  mesa-dev
-BuildRequires:  xorgproto-dev
 BuildRequires:  libva-dev
 BuildRequires:  libvdpau-dev
+BuildRequires:  libX11-dev
+BuildRequires:  mesa-dev
+BuildRequires:  xorgproto-dev
 BuildRequires:  pkg-config
 BuildRequires:  pkgconfig(gl)
 
@@ -62,7 +63,7 @@ export CXXFLAGS="$CXXFLAGS -O3 -Ofast -falign-functions=32 -ffat-lto-objects -fl
 
 ./autogen.sh --prefix=/usr --enable-glx
 
-make
+make %{?_smp_mflags}
 
 
 %install
