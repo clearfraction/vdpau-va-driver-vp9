@@ -5,7 +5,7 @@
 
 Name:           vdpau-va-driver-vp9
 Version:        0.7.4
-Release:        1.%{shortcommit}
+Release:        2.%{shortcommit}
 Summary:        A VA-API implementation that uses VDPAU as a backend
 
 License:        MIT
