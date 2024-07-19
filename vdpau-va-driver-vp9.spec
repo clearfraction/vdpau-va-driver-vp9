@@ -1,5 +1,5 @@
-%global gitdate 20211012
-%global commit 509d3b21a1084b4f492b50cced8835f4cd591c4a
+%global gitdate 20240521
+%global commit 3fb149e1dee806952f0362e10933c2fc4d87e34f
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 
 Name:           vdpau-va-driver-vp9
